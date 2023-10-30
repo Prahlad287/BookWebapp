@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>BookWebApp</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.html</welcome-file>
+  
+  </welcome-file-list>
+  		<servlet>
+  			<servlet-name>first</servlet-name>
+  			<servlet-class>com.idiot.RegisterServlet</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  				<servlet-name>first</servlet-name>
+  				<url-pattern>/register</url-pattern>
+  		</servlet-mapping>
+  		
+  		<servlet>
+  			<servlet-name>third</servlet-name>
+  			<servlet-class>com.idiot.EditBook</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  				<servlet-name>third</servlet-name>
+  				<url-pattern>/Edit</url-pattern>
+  		</servlet-mapping>  
+  		<servlet>
+  			<servlet-name>four</servlet-name>
+  			<servlet-class>com.idiot.EditUpdate</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  				<servlet-name>four</servlet-name>
+  				<url-pattern>/Editupdate</url-pattern>
+  		</servlet-mapping>  
+  			<servlet>
+  			<servlet-name>five</servlet-name>
+  			<servlet-class>com.idiot.Delete</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  				<servlet-name>five</servlet-name>
+  				<url-pattern>/deleteurl</url-pattern>
+  		</servlet-mapping>  
+  		<servlet>
+  			<servlet-name>six</servlet-name>
+  			<servlet-class>com.idiot.ShowBookWithPagination</servlet-class>
+  		</servlet>
+  		<servlet-mapping>
+  				<servlet-name>six</servlet-name>
+  				<url-pattern>/showlist</url-pattern>
+  		</servlet-mapping>  
+</web-app>
